@@ -1,0 +1,18 @@
+WhoAmI:
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  log_opt: {}
+  image: emilevauge/whoami
+  stdin_open: true
+lb:
+  ports:
+  - 80:80
+  labels:
+    io.rancher.loadbalancer.target.WhoAmI: who
+  tty: true
+  image: rancher/load-balancer-service
+  links:
+  - WhoAmI:WhoAmI
+  stdin_open: true

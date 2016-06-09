@@ -1,0 +1,5 @@
+name: WhoAmI
+description: |
+  Use of WhoAmI image to demonstrate Rancher features
+version: v0.1
+category: Demo

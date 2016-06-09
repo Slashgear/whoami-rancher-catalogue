@@ -1,0 +1,18 @@
+.catalog
+  name: "WhoAmI"
+  version: v0.1
+  description: "Use of WhoAmI image to demonstrate Rancher features"
+  uuid: whoami-0
+
+WhoAmI:
+  scale: 1
+lb:
+  scale: 1
+  load_balancer_config:
+    haproxy_config: {}
+  health_check:
+    port: 42
+    interval: 2000
+    unhealthy_threshold: 3
+    healthy_threshold: 2
+    response_timeout: 2000
