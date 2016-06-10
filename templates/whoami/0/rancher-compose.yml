@@ -1,8 +1,11 @@
-.catalog
-  name: "WhoAmI"
+.catalog:
+  name: WhoAmI
   version: v0.1
-  description: "Use of WhoAmI image to demonstrate Rancher features"
+  description: |
+    Use of WhoAmI image to demonstrate Rancher features
   uuid: whoami-0
+  maintainer: "Antoine Caron"
+  minimum_rancher_version: v0.56.0
 
 WhoAmI:
   scale: 1
